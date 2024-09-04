@@ -1,3 +1,4 @@
+import AppHeader from "@/components/common/app-header";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 
@@ -5,15 +6,8 @@ export default function AppLayout({ children }: Readonly<{ children: React.React
 
 
   return (
-    <div className="w-full min-h-screen flex flex-col">
-       <header className="w-full px-4 py-2">
-            <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
-      </header>
+    <div className="w-full min-h-screen flex flex-col bg-gray-200 text-slate-700 p-4">
+       <AppHeader />
       <div className="w-full">
         {children}
       </div>
