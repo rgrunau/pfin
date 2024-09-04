@@ -11,14 +11,14 @@ export default function AppHeader() {
     };
 
   return (
-    <header className="w-full px-4 py-2 flex items-center">
+    <header className="font-extrabold bg-gradient-to-r from-sky-600 via-blue-800 to-blue-950 p-0">
         <div className="p-2 pr-2">
           <button 
               type="button"
-              className="text-xl italic"
+              className="text-xl text-slate-50"
               onClick={toggleNav}
           >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
               </svg>
           </button>
