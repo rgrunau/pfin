@@ -45,10 +45,10 @@ export default function AppHeader() {
                 
                     <Link 
                         key={""}
-                        href={"/#"}
+                        href={"/accounts"}
                         className="text-slate-900 text-3xl my-2"
                     >
-                        route
+                        Accounts
                     </Link>
                   
         </div>
